@@ -1,0 +1,271 @@
+:root {
+    --ThemeColor: #156963;
+    --ShadowColor: rgb(224, 224, 224);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+image {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    padding: 42px 56px 61px 56px;
+}
+
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__btn-group {
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__btn {
+    padding: 8px 20px;
+}
+
+.header__btn-sighUp a {
+    color: var(--ThemeColor);
+}
+
+.header__btn-sighIn {
+    background: var(--ThemeColor);
+}
+
+.welcome {
+    max-width: 523px;
+    margin: auto;
+    margin-top: 193px;
+    margin-bottom: 323px;
+}
+
+.welcome__title {
+    color: var(--ThemeColor);
+    font-size: 68px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 523px;
+    margin-bottom: 24px;
+}
+
+.welcome__desc {
+    color: rgb(44, 21, 0);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 493px;
+}
+
+.advantages__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    flex: 0 1 calc((100% - 20px * 3)/4);
+    max-width: 268px;
+    border: 1px solid var(--ShadowColor);
+    padding: 22px 16px;
+}
+
+.advantages__item-title {
+    color: var(--ThemeColor);
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 137px;
+}
+
+.advantages__item-cont {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.advantages__item-desc {
+    color: rgb(44, 21, 0);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.advantages__item-image {
+    border: 1px solid var(--ShadowColor);
+    border-style: dashed;
+}
+
+.plants__title {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+
+hr {
+    border-top: 1px solid var(--ShadowColor);
+}
+
+.plants__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+
+.plants__item {
+    flex: 0 1 calc((100% - 20px * 4)/5);
+    max-width: 217px;
+}
+
+.plants__item-image {
+    border: 1px solid var(--ShadowColor);
+    border-style: dashed;
+}
+
+.plants__item-name {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 8px;
+}
+
+.plants__item-price {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 80px;
+    background: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__image {
+    border: 1px solid var(--ShadowColor);
+    border-style: dashed;
+}
+
+.footer__title {
+    color: rgb(44, 21, 0);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    max-width: 585px;
+    margin-bottom: 32px;
+}
+
+.footer__info {
+    margin-left: 57px;
+}
+
+.footer__btn a {
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 20px;
+    background: var(--ThemeColor);
+}
+
+@media screen and (max-width:1031px) {
+    .footer__title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:865px) {
+    .footer__title {
+        font-size: 28px;
+    }
+
+    .footer__image {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .advantages__item {
+        flex: 0 1 calc((100% - 20px * 1)/2);
+        margin: 15px;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer__title {
+        font-size: 20px;
+    }
+
+    .footer__image {
+        max-width: 200px;
+    }
+
+    .advantages__item {
+        flex: 0 1 calc((100% - 20px * 0)/1);
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .welcome {
+        margin-top: 123px;
+        margin-bottom: 153px;
+    }
+    .welcome__title{
+        font-size: 36px;
+    }
+    .welcome__desc {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:563px) {
+    .footer__title {
+        font-size: 16px;
+    }
+    .footer__image {
+        max-width: 150px;
+    }
+    .container{
+        padding: 21px 28px 30px 28px;
+    }
+  
+}
+@media screen and (max-width:500px) {
+    .footer__title {
+        font-size: 14px;
+    }
+    .plants__item {
+        flex: 0 1 calc((100% - 20px * 0)/1);
+        margin: auto;
+    }
+}
