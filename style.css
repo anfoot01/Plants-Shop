@@ -285,6 +285,9 @@ hr {
     .container {
         padding: 21px 28px 30px 28px;
     }
+    .footer__info {
+        margin-left: 30px;
+    }
 
 }
 
@@ -296,5 +299,8 @@ hr {
     .plants__item {
         flex: 0 1 calc((100% - 20px * 0)/1);
         margin: auto;
+    }
+    .footer__info {
+        margin-left: 10px;
     }
 }
